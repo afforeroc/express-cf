@@ -1,0 +1,3 @@
+applications:
+- name: express-cf-<initials>-<date>
+  memory: 64M
