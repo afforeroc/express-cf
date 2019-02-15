@@ -24,14 +24,14 @@ Después de teminar este pattern usted entenderá como:
 
 ### 1. Opción A: Crea la aplicación desde cero
 * Instala el generador de express: ```$ npm install express-generator -g```
-* Genera la aplicación: ```$ express --view=pug express-cloudfoundry```
-* Posiciónate dentro de la carpeta raíz del repositorio: ```$ cd express-cloudfoundry```
+* Genera la aplicación: ```$ express --view=pug express-cf```
+* Posiciónate dentro de la carpeta raíz del repositorio: ```$ cd express-cf```
 * Crea y guarda el archivo ```.gitignore``` con la información de este repositorio
 * Crea y guarda el archivo ```manifest.yml``` con la información de este repositorio
 
 ### 1. Opción B: Clonar el repositorio
-* Clona este repositorio localmente:  ```$ git clone https://github.com/afforeroc/express-cloudfoundry```
-* Posiciónate dentro de la carpeta raíz del repositorio: ```$ cd express-cloudfoundry```
+* Clona este repositorio localmente:  ```$ git clone https://github.com/afforeroc/express-cf```
+* Posiciónate dentro de la carpeta raíz del repositorio: ```$ cd express-cf```
 
 ### 2. Probar la aplicación web de forma local
 * Instala las librerias necesarias: ```$ npm install```
@@ -61,6 +61,8 @@ applications:
 *	Visualiza tu aplicación web accediendo al [dashboard de IBM Cloud](https://console.bluemix.net/dashboard/apps)
 
 ## Links de interés:
+* Documentación de Express.js: https://expressjs.com/
+* Documentacion de express-generator: https://expressjs.com/es/starter/generator.html
 *	Documentación de IBM Cloud: https://console.bluemix.net/docs/
 *	Documentación de Cloud Foundry: https://docs.cloudfoundry.org/ 
 * Documentación sobre manifest.yml: https://docs.cloudfoundry.org/devguide/deploy-apps/manifest.html
