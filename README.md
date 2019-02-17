@@ -19,7 +19,7 @@ Este tutorial te indicará como desplegar una aplicación web de `Express.js` so
 * Verifica la instalación de Node.js: `$ node -v`
 * Verifica la instalación de Node.js package manager: `$ npm -v`
 * Instala Express y su generador: `$ npm install express-generator -g`
-* Verifica la instalación de Express:`$ express --version`
+* Verifica la instalación de Express: `$ express --version`
 
 ### Crear y probar la aplicación web
 * Crea la aplicación: `$ express --view=pug express-cf`
