@@ -25,7 +25,7 @@ Este tutorial te indicará como desplegar una aplicación web de `Express.js` so
 * Crea la aplicación: `$ express --view=pug express-cf`
 * Accede a la carpeta del proyecto: `$ cd express-cf`
 * Instala las librerias necesarias: `$ npm install`
-* Corre la aplicación: `npm start`
+* Corre la aplicación: `$ npm start`
 * Abre el navegador web en: http://localhost:3000/
 * Detén la aplicación: `(Ctrl + C)`
 
