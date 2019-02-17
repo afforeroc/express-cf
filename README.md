@@ -1,68 +1,71 @@
-# Crear y desplegar una aplicación web de Express.js en Cloud Foundry de IBM Cloud
+# Desplegar una aplicación web de Express.js en Cloud Foundry de IBM Cloud
 
 > Presentación [Introducción a Cloud Foundry](https://ibm.box.com/v/cf-ppt)
 
-Este tutorial te indicará como crear y desplegar una aplicación web de Express.js en Cloud Foundry de IBM Cloud usando SHELL. Una vez la aplicación este desplegada será accesible desde cualquier navegador. 
-
-Después de teminar este pattern usted entenderá como:
-* Crear una aplicación web de Express.js desde cero
-* Usar el CLI de IBM Cloud
-* Desplegar aplicaciones web por medio del manifest.yml y el package.json
+Este tutorial te indicará como desplegar una aplicación web de `Express.js` sobre Cloud Foundry de IBM Cloud usando la ventana de comandos. Una vez la aplicación este desplegada, esta será accesible desde cualquier navegador web. 
 
 ## Servicios Incluidos
-* [IBM Cloud - Cloud Foundry](https://www.ibm.com/cloud/cloud-foundry): Servicio en la nube que ejecuta código en una plataforma como servicio (PaaS), open source, serverless y altamente escalable.
+* [IBM Cloud - Cloud Foundry](https://www.ibm.com/cloud/cloud-foundry): Servicio en la nube que ejecuta código fuente en una plataforma como servicio (PaaS). Open source, serverless y altamente escalable.
 
-## Prerequisitos
+## Requisitos básicos
+* Ventana de comandos como `Terminal` o `PowerShell`
+* Editor de texto/código como `Notepad++` o `Visual Studio Code`
 * Cuenta activa de [IBM Cloud](https://console.bluemix.net)
-* Manejo básico de la ventana de comandos tipo CMD, PowerShell o Terminal.
-* Tener instalado ```Node.js v10.15.1``` o superior.
 
-### 0. Instalar IBM Cloud CLI
-* Instala en Mac/Linux: ```$ curl -sL https://ibm.biz/idt-installer | bash```
-* Instala en Windows: https://clis.ng.bluemix.net/download/bluemix-cli/latest/win64
-* Verifica la versión del CLI: ```$ ibmcloud -v```
+## 1. Opción A: Crear, probar y configurar la aplicación web
 
-### 1. Opción A: Crea la aplicación desde cero
-* Instala el generador de express: ```$ npm install express-generator -g```
-* Genera la aplicación: ```$ express --view=pug express-cf```
-* Posiciónate dentro de la carpeta raíz del repositorio: ```$ cd express-cf```
-* Crea y guarda el archivo ```.gitignore``` con la información de este repositorio
-* Crea y guarda el archivo ```manifest.yml``` con la información de este repositorio
+### Instalar Node.js y Express
+* Instala la última versión de [Node.js](https://nodejs.org/en/)
+* Verifica la instalación de Node.js: `$ node -v`
+* Verifica la instalación de Node.js package manager: `$ npm -v`
+* Instala Express y su generador: `$ npm install express-generator -g`
+* Verifica la instalación de Express:`$ express --version`
 
-### 1. Opción B: Clonar el repositorio
-* Clona este repositorio localmente:  ```$ git clone https://github.com/afforeroc/express-cf```
-* Posiciónate dentro de la carpeta raíz del repositorio: ```$ cd express-cf```
-
-### 2. Probar la aplicación web de forma local
-* Instala las librerias necesarias: ```$ npm install```
-* Corre la aplicación: ```npm start```
+### Crear y probar la aplicación web
+* Crea la aplicación: `$ express --view=pug express-cf`
+* Accede a la carpeta del proyecto: `$ cd express-cf`
+* Instala las librerias necesarias: `$ npm install`
+* Corre la aplicación: `npm start`
 * Abre el navegador web en: http://localhost:3000/
+* Detén la aplicación: `(Ctrl + C)`
 
-### 3. Login con IBM Cloud CLI 
-*	Inicia sesión en IBM Cloud: ```$ ibmcloud login``` 
-* Configura la organización y espacio de Cloud Foundry: ```$ ibmcloud target -cf```
-* Si deseas cambiar de organización y/o espacio: ```$ ibmcloud target -o <organization name> -s <spacename>```
-
-### 4. Desplegar la aplicación usando el CLI
-* En el archivo `manifest.yml`, cambia el valor del atributo `- name` colocando un nombre **único**, ya que este será usado como parte del subdominio generado. Puedes usar la plantilla del repositorio para colocar tus iniciales y la fecha del día de hoy.
+### Configurar la aplicación para el despliegue
+Desde la carpeta raíz del proyecto
+* Posiciónate en la carpeta raíz del proyecto, crea el archivo `manifest.yml` y editalo con la siguiente información:
 ```
 ---
 applications:
 - name: express-cf-<initials>-<date>
   memory: 64M
 ```
-* En el archivo `package.json`, verifica que exista la linea/comando `"start": ...` dentro de la sección `"scripts"`, ya que este permitirá ejecutar la aplicación en la nube.
-```
-"scripts": {
-    "start": "node ./bin/www"
-  },
-```
-* Sube la aplicación a IBM Cloud: ```$ ibmcloud app push ```
-*	Visualiza tu aplicación web accediendo al [dashboard de IBM Cloud](https://console.bluemix.net/dashboard/apps)
+
+## 1. Opción B: Clonar el repositorio
+Al clonar este repositorio, la aplicación `express-cf` tendrá los archivos de configuración para el despliegue
+* Descarga/clona este repositorio localmente: `$ git clone https://github.com/afforeroc/express-cf`
+
+## 2. Instalar IBM Cloud CLI
+Instala según tu sistema operativo
+* Instala en Mac/Linux: `$ curl -sL https://ibm.biz/idt-installer | bash`
+* Instala en Windows: https://clis.ng.bluemix.net/download/bluemix-cli/latest/win64
+* Verifica la versión del CLI: `$ ibmcloud -v`
+
+## 3. Iniciar sesión con IBM Cloud CLI
+Sigue las instrucciones interactivas del CLI en cada paso 
+* Inicia sesión en IBM Cloud: `$ ibmcloud login`
+* Apunta al espacio de trabajo de Cloud Foundry: `$ ibmcloud target --cf`
+* Si deseas hacer cambios a tu sesión: `$ ibmcloud target -r <REGION> -o <ORG> -s <SPACE>`
+
+## 4. Desplegar la aplicación usando el CLI
+* Dentro del archivo `manifest.yml`, cambia el valor del atributo `- name` colocando un nombre **único**, ya que este será usado como parte de la URL generada. Puedes usar la plantilla para colocar tus iniciales y una fecha.
+* Dentro del archivo `package.json`, verifica que exista el comando `"start": "node ./bin/www"` dentro de la sección `"scripts"`, ya que este permitirá ejecutar la aplicación en la nube.
+* Posicionate en la carpeta raíz de la aplicación web
+* Sube la aplicación a Cloud Foundry de IBM Cloud: `$ ibmcloud app push`
+* Visualiza tu aplicación web accediendo al [Dashboard de IBM Cloud](https://console.bluemix.net/dashboard/apps)
 
 ## Links de interés:
 * Documentación de Express.js: https://expressjs.com/
 * Documentacion de express-generator: https://expressjs.com/es/starter/generator.html
-*	Documentación de IBM Cloud: https://console.bluemix.net/docs/
-*	Documentación de Cloud Foundry: https://docs.cloudfoundry.org/ 
+* Documentación de IBM Cloud: https://console.bluemix.net/docs/
+* Documentación de IBM Cloud CLI: https://console.bluemix.net/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_cli
+* Documentación de Cloud Foundry: https://docs.cloudfoundry.org/ 
 * Documentación sobre manifest.yml: https://docs.cloudfoundry.org/devguide/deploy-apps/manifest.html
