@@ -42,7 +42,5 @@ applications:
 ## Links de interés
 * Documentación de Express.js: https://expressjs.com/
 * Documentacion de express-generator: https://expressjs.com/es/starter/generator.html
-* Documentación de IBM Cloud: https://console.bluemix.net/docs/
-* Documentación de IBM Cloud CLI: https://console.bluemix.net/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_cli
 * Documentación de Cloud Foundry: https://docs.cloudfoundry.org/ 
 * Documentación sobre manifest.yml: https://docs.cloudfoundry.org/devguide/deploy-apps/manifest.html
