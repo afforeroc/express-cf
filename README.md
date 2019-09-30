@@ -16,8 +16,8 @@ Este tutorial te indicará como configurar una aplicación web de `Express` para
 * Verifica la instalación de Express: `$ express --version`
 
 ### 2. Crear y probar la aplicación web
-* Crea la aplicación: `$ express --view=pug express-cf`
-* Accede a la carpeta raíz de la aplicación: `$ cd express-cf`
+* Crea la aplicación: `$ express --view=pug express-app`
+* Accede a la carpeta raíz de la aplicación: `$ cd express-app`
 * Instala las librerias necesarias: `$ npm install`
 * Corre la aplicación: `$ npm start`
 > Abre tu navegador web en `localhost:3000`
@@ -29,7 +29,7 @@ Desde la carpeta raíz del proyecto
 ```
 ---
 applications:
-- name: express-cf-<initials>-<date>
+- name: express-app-<initials>-<date>
   memory: 64M
 ```
 
