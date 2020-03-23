@@ -7,9 +7,9 @@
 * Text editor like `Notepad++` or `Visual Studio Code`
 
 ### 1. Install Node.js and Express
-* Install the latest version of [Node.js](https://nodejs.org/en/)
+* 1.1 Install the latest version of [Node.js](https://nodejs.org/en/)
 
-* Verify the Node.js and NPM installation
+* 1.2 Verify the Node.js and NPM installation
 ```
 node --version
 ```
@@ -17,7 +17,7 @@ node --version
 npm --version
 ```
 
-* Install Express Generator and verify the version
+* 1.3 Install Express Generator and verify the version
 ```
 npm install express-generator -g
 ```
@@ -31,12 +31,12 @@ Set-ExecutionPolicy Unrestricted
 ```
 
 ### 2. Create and check the app
-* Create the app
+* 2.1 Create the app
 ```
 express --view=pug express-app
 ```
 
-* Access the root folder of app and install all necessary libraries
+* 2.2 Access the root folder of app and install all necessary libraries
 ```
 cd express-app
 ```
@@ -44,19 +44,19 @@ cd express-app
 npm install
 ```
 
-* Run the app. Later, open your favorite web browser on `localhost:3000`
+* 2.3 Run the app. Later, open your favorite web browser on `localhost:3000`
 > Remember give access to Node.js to use the local network 
 ```
 npm start
 ```
 
-* Stop the app with this combination keys.
+* 2.4 Stop the app with this combination keys.
 ```
 (Ctrl + C)
 ```
 
 ### 3. Configure the app to deploy
-* Go to `express-app` folder and create `manifest.yml` file and edit it with following template
+Go to `express-app` folder and create `manifest.yml` file and edit it with following template
 ```
 ---
 applications:
@@ -65,7 +65,7 @@ applications:
 ```
 
 ### 4. Put a name to your app
-* Edit `manifest.yml` file changing the value of `- name` atribute. The name that should be **unique** because it will used as part of url of app. You can use the previous template putting your initials and the today's date.
+Edit `manifest.yml` file changing the value of `- name` atribute. The name that should be **unique** because it will used as part of url of app. You can use the previous template putting your initials and the today's date.
 
 ## Reference links
 * Cloudant Node.js Client: https://github.com/cloudant/nodejs-cloudant
