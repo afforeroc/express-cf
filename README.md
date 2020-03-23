@@ -9,31 +9,26 @@
 ### 1. Install Node.js and Express
 * Install the latest version of [Node.js](https://nodejs.org/en/)
 
-* Verify the Node.js installation
+* Verify the Node.js and NPM installation
 ```
 node --version
 ```
-
-* Verify the NPM installation
 ```
 npm --version
 ```
 
-* Install the lastest version of Express Generator
+* Install Express Generator and Verify the version
 ```
 npm install express-generator -g
 ```
-
-* Verify the Express version
 ```
 express --version
 ```
 
-> If you can't see the Express version on PowerShell, launch a PowerShell window as an administrator and enter this command
+> If you can't see the Express version on Windows, launch a PowerShell window as an administrator and enter this following command and again verify the Express version
 ```
 Set-ExecutionPolicy Unrestricted
 ```
-> and again verify the Express version
 
 ### 2. Create and check the app
 * Create the app
@@ -51,11 +46,11 @@ cd express-app
 npm install
 ```
 
-* Run the app. Later, open your favorite web browser on `localhost:3000` 
+* Run the app. Later, open your favorite web browser on `localhost:3000`
+> Remember give access to Node.js to use the local network 
 ```
 npm start
 ```
-> Remember give access to Node.js to use the local network
 
 * Stop the app with this combination keys
 ```
