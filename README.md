@@ -17,7 +17,7 @@ node --version
 npm --version
 ```
 
-* Install Express Generator and Verify the version
+* Install Express Generator and verify the version
 ```
 npm install express-generator -g
 ```
@@ -36,12 +36,10 @@ Set-ExecutionPolicy Unrestricted
 express --view=pug express-app
 ```
 
-* Access the root folder of app
+* Access the root folder of app and install all necessary libraries
 ```
 cd express-app
 ```
-
-* Install all necessary libraries
 ```
 npm install
 ```
@@ -52,7 +50,7 @@ npm install
 npm start
 ```
 
-* Stop the app with this combination keys
+* Stop the app with this combination keys.
 ```
 (Ctrl + C)
 ```
