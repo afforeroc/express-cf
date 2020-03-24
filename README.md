@@ -11,9 +11,9 @@ Also, here is an example of Express app with all files generated using the instr
 * Text editor like `Notepad++` or `Visual Studio Code`
 
 ### 1. Install Node.js and Express
-  * Install the latest version of [Node.js](https://nodejs.org/en/)
+  1.1 Install the latest version of [Node.js](https://nodejs.org/en/)
 
-  * Verify the Node.js and NPM installation
+  1.2 Verify the Node.js and NPM installation
   ```
   node --version
   ```
@@ -21,7 +21,7 @@ Also, here is an example of Express app with all files generated using the instr
   npm --version
   ```
 
-  * Install Express Generator and verify the Express version
+  1.3 Install Express Generator and verify the Express version
   ```
   npm install express-generator -g
   ```
