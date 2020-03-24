@@ -9,6 +9,8 @@
 * Command prompt like `Terminal` or `PowerShell`
 * Text editor like `Notepad++` or `Visual Studio Code`
 
+## Instructions
+
 ### 1. Install Node.js and Express framework
   1.1 Install the stable/latest version of [Node.js](https://nodejs.org/en/)
 
