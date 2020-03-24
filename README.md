@@ -10,7 +10,7 @@
 * Text editor like `Notepad++` or `Visual Studio Code`
 
 ### 1. Install Node.js and Express framework
-  1.1 Install the latest version of [Node.js](https://nodejs.org/en/)
+  1.1 Install the stable/latest version of [Node.js](https://nodejs.org/en/)
 
   1.2 Verify the Node.js installation
   ```
@@ -28,7 +28,7 @@
   express --version
   ```
 
-  > If you can't see the framework version on Windows, launch a PowerShell window as an administrator and enter this following command and again try to verify
+  > If you can't see the framework version on Windows, launch a PowerShell window as an administrator and enter this following command. Later, try again to verify
   ```
   Set-ExecutionPolicy Unrestricted
   ```
@@ -53,11 +53,11 @@
   npm start
   ```
 
-  2.4 Stop the app: <kbd>ctrl</kbd> + <kbd>C</kbd>
+  2.4 Stop the app with <kbd>ctrl</kbd> + <kbd>C</kbd>
   
 
 ### 3. Configure the app to deploy
-  3.1 Go to `express-app` folder and create `manifest.yml` file and edit it with following template
+  3.1 Go to `express-app\` folder and create `manifest.yml` file and edit it with following template
   ```
   ---
   applications:
