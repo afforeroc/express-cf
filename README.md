@@ -1,36 +1,40 @@
 # Create and configure an Express app to deploy on Cloud Foundry
+This repository has a README.md with instructions to create and configure an Express app to deploy on Cloud Foundry 
+Also, here is an example of Express app with all files generated using the instrunctions.
+* If you want to deploy it, but before that it is important to do step 4.
 
-**Note**: this repository has a Express app with all necessary files to deploy it on cloud, but it is necessary do the step 4.
+**Note 1** if you want deploy it this  but it is necessary do the step 4.
+**Note 2** if
 
 ## Required software
 * Command prompt like `Terminal` or `PowerShell`
 * Text editor like `Notepad++` or `Visual Studio Code`
 
 ### 1. Install Node.js and Express
-* 1.1 Install the latest version of [Node.js](https://nodejs.org/en/)
+    * Install the latest version of [Node.js](https://nodejs.org/en/)
 
-* 1.2 Verify the Node.js and NPM installation
-```
-node --version
-```
-```
-npm --version
-```
+    * Verify the Node.js and NPM installation
+    ```
+    node --version
+    ```
+    ```
+    npm --version
+    ```
 
-* 1.3 Install Express Generator and verify the version
-```
-npm install express-generator -g
-```
-```
-express --version
-```
+    * Install Express Generator and verify the Express version
+    ```
+    npm install express-generator -g
+    ```
+    ```
+    express --version
+    ```
 
-> If you can't see the Express version on Windows, launch a PowerShell window as an administrator and enter this following command and again verify the Express version
-```
-Set-ExecutionPolicy Unrestricted
-```
+    > If you can't see the Express version on Windows, launch a PowerShell window as an administrator and enter this following command and again verify the Express version
+    ```
+    Set-ExecutionPolicy Unrestricted
+    ```
 
-### 2. Create and check the app
+### 2. Create and run the app
 * 2.1 Create the app
 ```
 express --view=pug express-app
