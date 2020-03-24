@@ -53,9 +53,7 @@
   npm start
   ```
 
-  2.4 Stop the app with this combination keys
-  
-  ```<kbd>ctrl</kbd> + <kbd>C</kbd>```
+  2.4 Stop the app: <kbd>ctrl</kbd> + <kbd>C</kbd>
   
 
 ### 3. Configure the app to deploy
