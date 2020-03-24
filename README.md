@@ -55,8 +55,7 @@
 
   2.4 Stop the app with this combination keys.
   ```
-  <kbd>^</kbd> + <kbd>C</kbd>
-  Markup : <kbd>⌘F</kbd>
+  <kbd>ctrl</kbd> + <kbd>C</kbd>
   ```
 
 ### 3. Configure the app to deploy
