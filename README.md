@@ -11,28 +11,28 @@ Also, here is an example of Express app with all files generated using the instr
 * Text editor like `Notepad++` or `Visual Studio Code`
 
 ### 1. Install Node.js and Express
-    * Install the latest version of [Node.js](https://nodejs.org/en/)
+  * Install the latest version of [Node.js](https://nodejs.org/en/)
 
-    * Verify the Node.js and NPM installation
-    ```
-    node --version
-    ```
-    ```
-    npm --version
-    ```
+  * Verify the Node.js and NPM installation
+  ```
+  node --version
+  ```
+  ```
+  npm --version
+  ```
 
-    * Install Express Generator and verify the Express version
-    ```
-    npm install express-generator -g
-    ```
-    ```
-    express --version
-    ```
+  * Install Express Generator and verify the Express version
+  ```
+  npm install express-generator -g
+  ```
+  ```
+  express --version
+  ```
 
-    > If you can't see the Express version on Windows, launch a PowerShell window as an administrator and enter this following command and again verify the Express version
-    ```
-    Set-ExecutionPolicy Unrestricted
-    ```
+  > If you can't see the Express version on Windows, launch a PowerShell window as an administrator and enter this following command and again verify the Express version
+  ```
+  Set-ExecutionPolicy Unrestricted
+  ```
 
 ### 2. Create and run the app
 * 2.1 Create the app
