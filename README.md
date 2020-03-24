@@ -53,10 +53,9 @@
   npm start
   ```
 
-  2.4 Stop the app with this combination keys.
-  ```
+  2.4 Stop the app with this combination keys
   <kbd>ctrl</kbd> + <kbd>C</kbd>
-  ```
+  
 
 ### 3. Configure the app to deploy
   3.1 Go to `express-app` folder and create `manifest.yml` file and edit it with following template
