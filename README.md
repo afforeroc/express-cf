@@ -1,6 +1,6 @@
 # Create and configure an Express app to deploy on Cloud Foundry
 > This repository has an example of Express app with all necessary files to deploy it
->  * If you want to run it, you should review steps 1 and 2
+>  * If you want to run it locally, you should review steps 1 and 2
 >  * If you want to deploy it, you should review step 3
   
 ## Required software
