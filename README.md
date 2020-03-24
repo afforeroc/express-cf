@@ -1,18 +1,18 @@
 # Create and configure an Express app to deploy on Cloud Foundry
-> This repository has an example of Express app with all necessary files to deploy it
+> This repository has a web app sample with all necessary files to deploy it on cloud
 >  * If you want to run it locally, you should review steps 1 and 2
 >  * If you want to deploy it on cloud, you should review step 3
   
 ## Required software
-* Command prompt like `Terminal` or `PowerShell`
-* Text editor like `Notepad++` or `Visual Studio Code`
+* Command prompt like `Terminal`/`PowerShell`
+* Text editor like `Notepad++`/`Visual Studio Code`
 
 ## Instructions
 
-### 1. Install Node.js and Express framework
+### 1. Install Node JS and Express
   1.1 Install the stable/latest version of [Node.js](https://nodejs.org/en/)
 
-  1.2 Verify the Node.js installation
+  1.2 Verify the Node JS installation
   ```
   node --version
   ```
@@ -57,7 +57,7 @@
   
 
 ### 3. Configure the app to deploy
-  3.1 Go to `express-app\` folder and create `manifest.yml` file and edit it with following template
+  3.1 Go to the root folder `express-app\` and create `manifest.yml` file and edit it with following template
   ```
   ---
   applications:
