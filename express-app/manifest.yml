@@ -1,4 +1,0 @@
----
-applications:
-- name: express-app-<initials>-<date>
-  memory: 64M
