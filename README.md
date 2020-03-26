@@ -48,6 +48,11 @@ This tutorial was designed to be done on a personal computer. Most every steps r
   ```
   npm install
   ```
+  
+  > If you downloaded the web app sample, you should install dependencies to run it.
+  ```
+  npm install
+  ```
 
   **2.3** Run the app. Later, open your favorite web browser on `localhost:3000`.
   > Remember give access to Node.js to use the local network 
