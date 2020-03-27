@@ -1,5 +1,5 @@
 # Create and configure a Express app to deploy on Cloud Foundry
-This repository belongs to tutorial set of repository: [Deploy a web application on Cloud Foundry Service](https://github.com/afforeroc/deploy-on-cloudfoundry).<br>
+This repository belongs to tutorial set of repository [Deploy a web application on Cloud Foundry Service](https://github.com/afforeroc/deploy-on-cloudfoundry).<br>
 Additional, contains a web app sample for study and use.
 
 ## Tutorial
@@ -40,7 +40,7 @@ Set-ExecutionPolicy Unrestricted
 express --view=pug express-app
 ```
 
-2.2 Go to root folder: `express-app` and install all necessary libraries.
+2.2 Go to root folder `express-app` and install all necessary libraries.
 > Do this step if you downloaded the web app sample.
 ```
 cd express-app
@@ -70,7 +70,7 @@ applications:
   memory: 64M
 ```
 
-3.2 The web app is configurated. Now, you can go to repository: [Deploy a web application on Cloud Foundry Service](https://github.com/afforeroc/deploy-on-cloudfoundry) to learn how to deploy on Cloud.
+3.2 The web app is configurated. Now, you can go to repository [Deploy a web application on Cloud Foundry Service](https://github.com/afforeroc/deploy-on-cloudfoundry) to learn how to deploy on Cloud.
 
 ## Reference links
 * [Cloudant Node.js Client](https://github.com/cloudant/nodejs-cloudant)
