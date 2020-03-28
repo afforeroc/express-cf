@@ -50,7 +50,7 @@ npm install
 ```
 
 2.3 Run the app locally and later, open your favorite web browser on `localhost:3000`.
-> Remember give access to Node.js to use the local network 
+> Remember give access to Node.js to use local network 
 ```
 npm start
 ```
