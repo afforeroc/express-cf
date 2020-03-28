@@ -1,4 +1,4 @@
-# Create and configure a Express app to deploy on Cloud Foundry
+# Create and configure an Express app to deploy on Cloud Foundry
 This is a tutorial about how to create and configure a simple web app to deploy on cloud using Cloud Foundry service.<br>
 Additional, it contains a web app sample for study and use.
 
@@ -40,7 +40,7 @@ Set-ExecutionPolicy Unrestricted
 express --view=pug express-app
 ```
 
-2.2 Go to `express-app` folder and install all necessary libraries.
+2.2 Go to `express-app\` folder and install all necessary libraries.
 > Do this step if you downloaded the web app sample.
 ```
 cd express-app
