@@ -1,19 +1,20 @@
 # Create and configure an Express app to deploy on Cloud Foundry
 This is a tutorial about how to create and configure a simple web app to deploy on cloud using Cloud Foundry service.<br>
-Additional, it contains a web app sample for study and use.
+Additional, it contains a web app sample for use and study.
 
 ## Tutorial
-This tutorial was designed to be done on a personal computer. <br> 
-Most every steps require using of console commands except when is indicated.
+This tutorial was designed to be done on a personal computer and their steps require using command-line interpreter, text edition, etc.
 
 ### Required software
-* Command prompt like Terminal, PowerShell, etc.
+* Command-line interpreter like Terminal, PowerShell, etc.
 * Text editor like Notepad++, Visual Studio Code, etc.
 
 ### 1. Install Node JS and Express
 1.1 Install stable/latest version of [Node.js](https://nodejs.org/en/).
+> Command-line or installer package
 
-1.2 Verify Node JS installation.
+1.2 Verify Node.js installation.
+> Command-line
 ```
 node --version
 ```
@@ -22,6 +23,7 @@ npm --version
 ```
 
 1.3 Install and verify the framework.
+> Command-line
 ```
 npm install express-generator -g
 ```
@@ -29,19 +31,21 @@ npm install express-generator -g
 express --version
 ```
 
-> If you can't see the framework version on Windows, launch a PowerShell window as an administrator and enter this following command. Later, try again to verify.
+1.4 If you can't see the framework version on Windows. Launch a PowerShell window as an administrator and enter this following command. Later, try again to verify.
+> Command-line
 ```
 Set-ExecutionPolicy Unrestricted
 ```
 
 ### 2. Create and run the app
 2.1 Create the app.
+> Command-line
 ```
 express --view=pug express-app
 ```
 
-2.2 Go to `express-app\` folder and install all necessary libraries.
-> Do this step if you downloaded the web app sample.
+2.2 Go to `express-app\` folder and install all necessary libraries. Do this step if you downloaded the web app sample.
+> Command-line
 ```
 cd express-app
 ```
@@ -49,8 +53,8 @@ cd express-app
 npm install
 ```
 
-2.3 Run the app locally and later, open your favorite web browser on `localhost:3000`.
-> Remember give access to Node.js to use local network 
+2.3 Run the app locally and later, open your favorite web browser on `localhost:3000`. Remember give access to Node.js to use local network.
+> Command-line 
 ```
 npm start
 ```
@@ -61,7 +65,7 @@ npm start
 ### 3. Configure the app to deploy
 Go to `express-app\` folder.
 
-3.1  Create `manifest.yml` file and edit it with following template. It is necessary change of value of `name` attribute and this should be **unique** because it will used as part of an **URL** where your app will deployed. For example, you can put your initials and today's date.
+3.1  Create `manifest.yml` file and edit it with following text template. It is necessary use an **unique** value for `name` attribute, because it will used as part of an **URL** where your app will deployed. For example, you can put your initials and today's date.
 > Text 
 ```
 ---
