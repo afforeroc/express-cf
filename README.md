@@ -9,9 +9,9 @@ This tutorial was designed to be done on a personal computer and their steps req
 * Command-line interpreter like Terminal, PowerShell, etc.
 * Text editor like Notepad++, Visual Studio Code, etc.
 
-### 1. Install Node JS and Express
+### 1. Install Node.js and Express
 1.1 Install stable/latest version of [Node.js](https://nodejs.org/en/).
-> Command-line or installer package
+> Command-line/Installer package
 
 1.2 Verify Node.js installation.
 > Command-line
@@ -65,7 +65,7 @@ npm start
 ### 3. Configure the app to deploy
 Go to `express-app\` folder.
 
-3.1  Create `manifest.yml` file and edit it with following text template. It is necessary use an **unique** value for `name` attribute, because it will used as part of an **URL** where your app will deployed. For example, you can put your initials and today's date.
+3.1  Create `manifest.yml` file and edit it with following text template. It's necessary customize and use a **unique** value for name attribute, because this will used as part of an **URL** string where your app will deployed.
 > Text 
 ```
 ---
